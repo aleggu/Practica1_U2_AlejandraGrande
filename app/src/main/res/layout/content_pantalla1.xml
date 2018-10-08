@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Pantalla1"
+    tools:showIn="@layout/activity_pantalla1"
+    android:id="@+id/linear">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Para agregar mas tareas haz click en +"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:id="@+id/enunciado"
+        android:gravity="center"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lista">
+
+    </ListView>
+
+</LinearLayout>

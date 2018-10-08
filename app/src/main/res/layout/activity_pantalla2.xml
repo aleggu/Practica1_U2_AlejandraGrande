@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pantalla2">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CAPTURA DE TAREA"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:layout_margin="15dp"
+        android:id="@+id/titulo"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Titulo: "
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_below="@id/titulo"
+        android:layout_margin="20dp"
+        android:id="@+id/etiquetatitulo"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titulo"
+        android:layout_toRightOf="@id/etiquetatitulo"
+        android:id="@+id/campotitulo"
+        android:ems="12"
+        android:hint="Titulo de la Tarea"
+        android:layout_marginTop="15dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_below="@id/etiquetatitulo"
+        android:layout_margin="20dp"
+        android:id="@+id/etiquetafecha"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/campotitulo"
+        android:layout_toRightOf="@id/etiquetatitulo"
+        android:id="@+id/campofecha"
+        android:ems="12"
+        android:hint="Fecha de Entrega"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Materia"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_below="@id/etiquetafecha"
+        android:layout_margin="20dp"
+        android:id="@+id/etiquetamateria"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/campofecha"
+        android:layout_toRightOf="@id/etiquetamateria"
+        android:id="@+id/campomateria"
+        android:ems="11"
+        android:hint="Quien la dejo"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descripcion"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_below="@id/etiquetamateria"
+        android:layout_margin="20dp"
+        android:id="@+id/etiquetadescripcion"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/campomateria"
+        android:layout_toRightOf="@id/etiquetadescripcion"
+        android:id="@+id/campodescripcion"
+        android:ems="9"
+        android:hint="Que debo hacer?"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:paddingVertical="15dp"
+        android:paddingHorizontal="35dp"
+        android:background="@drawable/boton_redondo"
+        android:layout_below="@id/campodescripcion"
+        android:id="@+id/botonguardar"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
